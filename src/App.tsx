@@ -1,9 +1,27 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import FontTest from './FontTest'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [showFontTest, setShowFontTest] = useState(false)
+
+  if (showFontTest) {
+    return (
+      <div className="min-h-screen bg-base-100">
+        <div className="p-4">
+          <button 
+            className="btn btn-secondary mb-4" 
+            onClick={() => setShowFontTest(false)}
+          >
+            ← Back to Main App
+          </button>
+        </div>
+        <FontTest />
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-base-100 p-8">
@@ -25,6 +43,8 @@ function App() {
           <p className="font-secondary text-lg text-base-content">This is Outfit font (secondary) - modern and clean</p>
           <p className="font-rubik text-lg text-base-content">This is Rubik font - rounded and friendly</p>
           <p className="font-primary text-lg text-base-content">This is Bricolage Grotesque (primary) - unique and stylish</p>
+          <p className="font-poppins text-lg text-base-content">This is Poppins font - versatile and professional</p>
+          <p style={{fontFamily: '"Inter", sans-serif'}} className="text-lg text-info">Inline style test: Inter font working</p>
         </div>
         
         <div className="card bg-base-200 shadow-xl p-6 max-w-md mx-auto">
@@ -42,6 +62,13 @@ function App() {
         <p className="font-secondary text-sm text-base-content/60">
           Click on the Vite and React logos to learn more
         </p>
+        
+        <button 
+          className="btn btn-outline btn-primary mt-4" 
+          onClick={() => setShowFontTest(true)}
+        >
+          🔤 Test Font Utilities
+        </button>
       </div>
     </div>
   )

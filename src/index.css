@@ -11,28 +11,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 3. Define custom font utilities using @layer */
-@layer utilities {
-  .font-primary {
-    font-family: "Bricolage Grotesque", sans-serif;
-  }
-
-  .font-dmsans {
-    font-family: "DM Sans", sans-serif;
-  }
-
-  .font-inter {
-    font-family: "Inter", sans-serif;
-  }
-
-  .font-secondary {
-    font-family: "Outfit", sans-serif;
-  }
-
-  .font-rubik {
-    font-family: "Rubik", sans-serif;
-  }
-}
+/* Custom font utilities are defined in tailwind.config.js */
 
 /* Optional global font override */
 * {

@@ -7,11 +7,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'primary': ['Bricolage Grotesque', 'sans-serif'],
-        'dmsans': ['DM Sans', 'sans-serif'],
-        'inter': ['Inter', 'sans-serif'],
-        'secondary': ['Outfit', 'sans-serif'],
-        'rubik': ['Rubik', 'sans-serif'],
+        'primary': ['"Bricolage Grotesque"', 'sans-serif'],
+        'dmsans': ['"DM Sans"', 'sans-serif'],
+        'inter': ['"Inter"', 'sans-serif'],
+        'secondary': ['"Outfit"', 'sans-serif'],
+        'rubik': ['"Rubik"', 'sans-serif'],
+        'poppins': ['"Poppins"', 'sans-serif'],
       },
     },
   },
