@@ -1,8 +1,9 @@
 import "./App.css";
-import Hero from "./components/Hero/Hero.tsx";
-import About from "./components/About/About.tsx";
-import Services from "./components/Services/Services.tsx";
-import SDLC from "./components/SDLC/SDLC.tsx";
+import Hero from "./components/hero/Hero.tsx";
+import About from "./components/about/About.tsx";
+import Services from "./components/services/Services.tsx";
+import SDLC from "./components/sdlc/SDLC.tsx";
+import Why from "./components/why/Why.tsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <About></About>
       <Services></Services>
       <SDLC></SDLC>
+      <Why></Why>
     </>
   );
 }
