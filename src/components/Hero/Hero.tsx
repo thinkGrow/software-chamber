@@ -5,6 +5,14 @@ import Nav from "./Nav";
 const Hero = () => {
   return (
     <div className="min-h-screen bg-gradient-to-bl from-[#0f1d29] to-[#0b0f1a] text-white relative overflow-hidden">
+      <div
+        className="absolute inset-0 z-[1] object-cover bg-no-repeat brightness-125"
+        style={{
+          backgroundImage: "url('vector/star.png')",
+          backgroundPosition: "0px 90px",
+        }}
+      ></div>
+
       {/* Vectors */}
       {/* Top Left*/}
       <div className="absolute -top-80 left-0">
