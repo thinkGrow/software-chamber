@@ -5,14 +5,14 @@ const About = () => {
       <div>
         <h1 className="text-7xl font-bri text-center text-balance">
           <span className="inline-block">
-            <img src="about/stars.png" alt="stars" />
+            <img src="stars.png" alt="stars" />
           </span>
           At Software Chamber,
           <span className="text-gray-400"> we specialize</span>
           in turning complex challenges into elegant
           <span className="text-gray-400"> digital solutions</span>
           <span className="inline-block">
-            <img src="about/stock.png" alt="stars" />
+            <img src="about/stock.png" alt="stock" />
           </span>
         </h1>
       </div>
