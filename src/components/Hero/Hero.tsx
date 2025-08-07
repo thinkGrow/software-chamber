@@ -5,13 +5,30 @@ import Nav from "./Nav";
 const Hero = () => {
   return (
     <div className="min-h-screen bg-gradient-to-bl from-[#0f1d29] to-[#0b0f1a] text-white relative overflow-hidden">
-      {/* Add star/dot pattern with absolute positioning or SVG */}
+      {/* Vectors */}
+      {/* Top Left*/}
+      <div className="absolute -top-80 left-0">
+        <img src="vector/vector.png" alt="" />
+      </div>
+      {/* Bottom Left  */}
+      <div className="absolute top-0 -left-10">
+        <img src="vector/vector.png" alt="" />
+      </div>
+      {/* Top Right */}
+      <div className="absolute -top-30 right-0">
+        <img src="vector/vector2.png" alt="" />
+      </div>
+      {/* Bottom Left */}
+      <div className="absolute top-50 -right-40">
+        <img src="vector/vector2.png" alt="" />
+      </div>
+
       <Nav></Nav>
-      <div className="text-center mt-8 space-y-2">
+      <div className="text-center mt-20 space-y-2">
         <div className="inline-block bg-teal-800/20 text-teal-400 text-sm px-4 py-1 rounded-full">
           ★ Smarter Idea, Instant Solutions
         </div>
-        <h1 className="text-center text-4xl md:text-7xl font-bold leading-tight space-y-2">
+        <h1 className="text-center text-4xl md:text-8xl font-bold leading-tight space-y-2 font-bri">
           <span className="block text-[#00FFE0]  bg-clip-text">
             We are your Software
           </span>
