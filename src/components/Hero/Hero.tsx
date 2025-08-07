@@ -5,7 +5,7 @@ import Nav from "./Nav";
 const Hero = () => {
   return (
     // dotted bg
-    <div className="min-h-screen relative inset-0 bg-black pb-20 ">
+    <div className="min-h-screen relative inset-0 bg-black pb-20 overflow-x-hidden">
       {/* Black background */}
       <div
         className="absolute inset-0 object-cover bg-no-repeat brightness-125"
@@ -16,21 +16,23 @@ const Hero = () => {
       ></div>
       <div className="text-white z-100">
         {/* Vectors */}
-        {/* Top Left*/}
-        <div className="absolute -top-80 left-0">
-          <img src="vector/vector.png" alt="" />
-        </div>
-        {/* Bottom Left  */}
-        <div className="absolute top-0 -left-10">
-          <img src="vector/vector.png" alt="" />
-        </div>
-        {/* Top Right */}
-        <div className="absolute -top-30 right-0">
-          <img src="vector/vector2.png" alt="" />
-        </div>
-        {/* Bottom Left */}
-        <div className="absolute top-50 -right-40">
-          <img src="vector/vector2.png" alt="" />
+        <div>
+          {/* Top Left*/}
+          <div className="absolute -top-80 left-0 ">
+            <img src="vector/vector.png" alt="" />
+          </div>
+          {/* Bottom Left  */}
+          <div className="absolute top-0 -left-10 ">
+            <img src="vector/vector.png" alt="" />
+          </div>
+          {/* Top Right */}
+          <div className="absolute -top-30 right-0 ">
+            <img src="vector/vector2.png" alt="" className="" />
+          </div>
+          {/* Bottom Left */}
+          <div className="absolute top-50 -right-40 ">
+            <img src="vector/vector2.png" alt="" />
+          </div>
         </div>
 
         <Nav></Nav>
