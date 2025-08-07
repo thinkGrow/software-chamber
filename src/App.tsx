@@ -10,6 +10,7 @@ import Industry from "./components/industry/Industry.tsx";
 import FAQ from "./components/faq/FAQ.tsx";
 import Testimonial from "./components/testimonial/Testimonial.tsx";
 import Contact from "./components/contact/Contact.tsx";
+import Footer from "./components/footer/Footer.tsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <FAQ></FAQ>
       <Testimonial></Testimonial>
       <Contact></Contact>
+      <Footer></Footer>
     </>
   );
 }
