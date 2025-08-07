@@ -17,7 +17,7 @@ const Services = () => {
     },
   ];
   return (
-    <section className="px-6 py-20 max-w-7xl mx-auto">
+    <section className="py-20 max-w-7xl mx-auto">
       {/* Section Header */}
       <div className="flex justify-between items-center mb-12">
         <h2 className="text-7xl font-black text-black flex items-center gap-2">
