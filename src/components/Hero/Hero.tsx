@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="inline-block bg-teal-800/20 text-teal-400 text-sm px-4 py-1 rounded-full">
           ★ Smarter Idea, Instant Solutions
         </div>
-        <h1 className="text-center text-4xl md:text-6xl font-bold leading-tight space-y-2">
+        <h1 className="text-center text-4xl md:text-7xl font-bold leading-tight space-y-2">
           <span className="block text-[#00FFE0]  bg-clip-text">
             We are your Software
           </span>
