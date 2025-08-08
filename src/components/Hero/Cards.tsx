@@ -2,8 +2,8 @@
 
 const Cards = () => {
   return (
-    <div className="flex text-left">
-      <div>
+    <div className="flex text-left justify-center">
+      <div className="">
         <img src="hero/card.png" alt="" />
       </div>
       <div className="space-y-8 p-22">

@@ -95,13 +95,11 @@ const Hero = () => {
             </h1>
           </div>
 
-          <div className="max-w-[90%] mx-auto mb-10">
-      <Cards></Cards>
-            
+          <div className="max-w-[90%] mx-auto mb-10 bg-white/40 rounded-2xl p-10">
+            <Cards></Cards>
           </div>
         </div>
       </div>
-
     </div>
   );
 };
