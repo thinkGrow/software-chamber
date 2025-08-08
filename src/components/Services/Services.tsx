@@ -2,22 +2,22 @@ const Services = () => {
   const services = [
     {
       title: "Web & Mobile App Development",
-      desc: "Software Chamber specializes in creating powerful, scalable, and secure e–",
+      desc: "Software Chamber specializes in creating powerful, scalable, and secure e–...",
       active: false,
     },
     {
       title: "Application Software Services",
-      desc: "Software Chamber specializes in creating powerful, scalable, and secure e–",
+      desc: "Software Chamber specializes in creating powerful, scalable, and secure e–...",
       active: true,
     },
     {
       title: "Software Coding & Optimuation",
-      desc: "Software Chamber specializes in creating powerful, scalable, and secure e–",
+      desc: "Software Chamber specializes in creating powerful, scalable, and secure e–...",
       active: false,
     },
   ];
   return (
-    <section className="py-20 w-11/12 mx-auto">
+    <section className="py-20 w-11/12 mx-auto mb-24">
       {/* Section Header */}
       <div className="flex justify-between items-center mb-12">
         {/* Left Column */}
@@ -35,7 +35,6 @@ const Services = () => {
             All Services
           </span>
 
-
           <div className="bg-gray-200 rounded-full w-10 h-10 flex items-center justify-center cursor-pointer hover:scale-105 transition">
             <img className="h-5 w-5" src="next.png" alt="" />
           </div>
@@ -43,22 +42,19 @@ const Services = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:h-80">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:h-90">
         {services.map((item, idx) => (
           <div
             key={idx}
-            className={`flex flex-col justify-between rounded-[2rem] p-6 transition duration-300 hover:bg-[#25BEB4] hover:text-white bg-gray-100 text-black"
-            }`}
+            className="flex flex-col justify-between rounded-[2rem] transition duration-300 hover:bg-[#25BEB4] hover:text-white bg-gray-100 text-black p-10"
           >
             <div>
-              <h3 className="text-5xl font-bri font-semibold mb-4">
-                {item.title}
-              </h3>
-              <p
-                className={`text-2xl font-outfit ${"hover:text-white/80 text-gray-500"}`}
-              >
-                {item.desc}
-              </p>
+              <div>
+                <h3 className="text-4xl font-bri font-semibold mb-2 h-[12vh]">
+                  {item.title}
+                </h3>
+              </div>
+              <p className="text-2xl font-outfit text-gray-500">{item.desc}</p>
             </div>
             <div className="mt-8">
               <button className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center hover:scale-105 transition cursor-pointer hover:text-[#25BEB4] text-black">
