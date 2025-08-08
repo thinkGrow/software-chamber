@@ -1,6 +1,6 @@
 const Why = () => {
   return (
-    <section className="bg-white py-20 relative mx-auto w-11/12">
+    <section className="bg-white py-20 relative mx-auto w-11/12 mb-20">
       {/* Left Arrow */}
       <div className="absolute -left-5 bottom-50 -translate-y-1/2 bg-black text-white w-10 h-10 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-800 hover:scale-105 transition">
         <img src="left.png" alt="left-chevron" />
@@ -20,10 +20,11 @@ const Why = () => {
           Deliver personalized experiences to your customers with AI-powered
           recommendation engines and dynamic content generation.
         </p>
-        <button className="mt-6 px-6 py-2 bg-gradient-to-tr to-[#2CCEBA] from-[#16AD71] text-white rounded-full backdrop-blur-2xl cursor-pointer hover:scale-105 transition">
-          Let’s Discuss 
-          <div>
-            
+
+        <button className="mt-6 px-6 py-2 bg-gradient-to-tr to-[#2CCEBA] from-[#16AD71] text-white rounded-full backdrop-blur-2xl cursor-pointer hover:scale-105 transition flex items-center gap-4 mx-auto font-outfit font-semibold">
+          <p>Let’s Discuss</p>
+          <div className="bg-[#E9E9E9] rounded-full p-2">
+            <img className="w-4 h-4" src="next-top.png" alt="arrow" />
           </div>
         </button>
       </div>
@@ -40,19 +41,16 @@ const Why = () => {
             title: "Adaptability",
             desc: "Software Chamber specializes in creating powerful, scalable, and secure e-commerce solutions tailored to business needs.",
             icon: "why/adapt.png",
-            
           },
           {
             title: "Scalability",
             desc: "Software Chamber specializes in creating powerful, scalable, and secure e-commerce solutions tailored to business needs.",
             icon: "why/scale.png",
-
           },
           {
             title: "Precision",
             desc: "Software Chamber specializes in creating powerful, scalable, and secure e-commerce solutions tailored to business needs.",
             icon: "why/precision.png",
-
           },
         ].map((card, i) => (
           <div
