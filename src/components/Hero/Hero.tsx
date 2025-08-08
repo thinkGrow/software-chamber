@@ -1,5 +1,6 @@
 // import React from "react";
 
+import Cards from "./Cards";
 import Nav from "./Nav";
 
 const Hero = () => {
@@ -95,10 +96,12 @@ const Hero = () => {
           </div>
 
           <div className="max-w-[90%] mx-auto mb-10">
-            <img src="hero_dummy.png" alt="" />
+      <Cards></Cards>
+            
           </div>
         </div>
       </div>
+
     </div>
   );
 };
