@@ -38,7 +38,7 @@ const Accordion = () => {
               checked={isOpen}
               onChange={() => setOpenIndex(i)}
             />
-            <div className="collapse-title font-semibold flex justify-between items-center cursor-pointer">
+            <div className="collapse-title font-medium flex justify-between items-center cursor-pointer font-bri tracking-tighter leading-2 text-3xl pb-10">
               {item.q}
 
               {/* Different button for open/closed */}
@@ -58,7 +58,7 @@ const Accordion = () => {
                 </button>
               )}
             </div>
-            <div className="collapse-content text-sm">{item.a}</div>
+            <div className="collapse-content text-xl leading-2.5 tracking-tighter font-outfit">{item.a}</div>
           </div>
         );
       })}
