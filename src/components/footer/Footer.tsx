@@ -1,61 +1,83 @@
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-20 relative overflow-hidden">
+    <footer className="bg-black text-white pt-20 pb-8 relative overflow-hidden">
       <div className="mx-auto w-11/12 px-6">
         {/* Header */}
-        <h1 className="text-6xl font-bri text-balance mb-12">
+        <h1 className="text-7xl font-bri font-semibold leading-28 text-balance mb-16">
           LET'S TALK
         </h1>
 
         {/* Grid */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 justify-between items-start">
           {/* Left Side */}
           <div className="space-y-6">
-            <p className="text-gray-400 max-w-md">
+            <p className="text-[#A6A6A6] max-w-md font-outfit leading-8 text-2xl mb-14">
               A new era of energy, elegance, and elite competition begins here.
               Where passion meets performance on the court like never before.
             </p>
 
             {/* Social media */}
             <div>
-              <h3 className="uppercase font-medium text-sm mb-3">
+              <h3 className="uppercase font-semibold font-bri text-2xl mb-6">
                 Social media
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2 text-gray-300 text-sm">
-                <a href="#">Instagram ↗</a>
-                <a href="#">Twitter ↗</a>
-                <a href="#">Tiktok ↗</a>
-                <a href="#">Facebook ↗</a>
-                <a href="#">LinkedIn ↗</a>
-                <a href="#">Youtube ↗</a>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-4 text-gray-300 font-outfit font-medium text-xl">
+                <a href="#">
+                  Instagram <span className="ml-2"> ↗</span>
+                </a>
+                <a href="#">
+                  Twitter <span className="ml-2"> ↗</span>
+                </a>
+                <a href="#">
+                  Tiktok <span className="ml-2"> ↗</span>
+                </a>
+                <a href="#">
+                  Facebook <span className="ml-2"> ↗</span>
+                </a>
+                <a href="#">
+                  LinkedIn <span className="ml-2"> ↗</span>
+                </a>
+                <a href="#">
+                  Youtube <span className="ml-2"> ↗</span>
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Right Side */}
+          {/* Middle */}
           <div className="space-y-6">
             <div>
-              <h3 className="uppercase font-medium text-sm">Address</h3>
-              <p className="text-gray-400">
+              <h3 className="uppercase text-2xl font-bri font-semibold mb-4">
+                Address
+              </h3>
+              <p className="text-gray-400 font-outfit text-2xl w-2/3 text-balance mb-10">
                 1901 Thornridge Cir, Shiloh, Hawaii 81063
               </p>
             </div>
             <div>
-              <h3 className="uppercase font-medium text-sm">Phone</h3>
-              <p className="text-gray-400">+1 872-298-3989</p>
+              <h3 className="uppercase text-2xl font-bri font-semibold mb-4">
+                Phone
+              </h3>
+              <p className="text-gray-400 font-outfit text-2xl w-2/3 text-balance mb-10">
+                +1 872-298-3989
+              </p>
             </div>
             <div>
-              <h3 className="uppercase font-medium text-sm">Email</h3>
-              <p className="text-gray-400">hello@tranzit.com</p>
+              <h3 className="uppercase text-2xl font-bri font-semibold mb-4">
+                Email
+              </h3>
+              <p className="text-gray-400 font-outfit text-2xl w-2/3 text-balance mb-10">
+                hello@tranzit.com
+              </p>
             </div>
           </div>
 
-          {/* Image */}
-          <div>
+          {/* Image (capped height so it doesn't make the row taller) */}
+          <div className="self-start overflow-hidden rounded-[16px]">
             <img
               src="footer/hero.png"
               alt="Team"
-              className="rounded-[16px] w-full max-w-[200px] object-cover"
+              className="w-full h-auto object-cover max-h-[380px] md:max-h-[460px] lg:max-h-[520px]"
             />
           </div>
         </div>
@@ -64,7 +86,7 @@ const Footer = () => {
         <hr className="border-gray-800 mt-20 mb-6" />
 
         {/* Bottom Bar */}
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
           <p>2024 Software Chamber All Right Reserved</p>
           <div className="flex gap-6">
             <a href="#">Privacy Policy</a>
