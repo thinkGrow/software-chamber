@@ -1,5 +1,4 @@
-// Uncover.jsx
-// Single file drop-in. TailwindCSS utilities assumed.
+import Span from "../span/Span";
 
 const Uncover = () => {
   return (
@@ -24,9 +23,7 @@ const Uncover = () => {
           </div>
 
           {/* badge */}
-          <div className="inline-block mb-6 px-4 py-1 text-sm rounded-full bg-[#102c2c] text-[#00FFE0] font-medium">
-            ★ Smarter Idea, instant solutions
-          </div>
+          <Span></Span>
 
           {/* logo */}
           <img

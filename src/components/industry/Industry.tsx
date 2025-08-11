@@ -1,6 +1,5 @@
-// import React from 'react';
-
 import Marquee from "react-fast-marquee";
+import Span from "../span/Span";
 
 const industries = [
   { title: "Tech", img: "/industries/tech.png" },
@@ -9,7 +8,6 @@ const industries = [
   { title: "Software", img: "/industries/software.png" },
   { title: "Entertainment", img: "/industries/entertainment.png" },
   { title: "Hospitality", img: "/industries/hospitality.png" },
-  //   { title: "Manufacturing", img: "/industries/manufacturing.png" },
   { title: "Energy", img: "/industries/energy.png" },
   { title: "Auto Motion", img: "/industries/automotive.png" },
   { title: "Agriculture", img: "/industries/agriculture.png" },
@@ -17,15 +15,15 @@ const industries = [
 
 const Industry = () => {
   return (
-    <section className="bg-black py-16 overflow-hidden">
-      <div className="text-center mb-8">
-        <p className="mb-3 inline-block bg-[#0E2F2F] text-sm text-primary px-4 py-1 rounded-full">
-          🌟 Smarter Idea, instant solutions
-        </p>
+    <section className="bg-black pb-30 overflow-hidden">
+      {/* Heading */}
+      <div className="w-11/12 mx-auto flex justify-center mb-10">
+        <Span></Span>
       </div>
 
+      {/* Row 1 */}
       <Marquee gradient={false} speed={70}>
-        <div className="flex items-center gap-10 px-10">
+        <div className="flex items-center gap-10">
           {industries.map((industry, i) => (
             <div
               key={i}
@@ -36,7 +34,30 @@ const Industry = () => {
                 alt={industry.title}
                 className="w-32 h-20 object-cover rounded-full shadow-md"
               />
-              <p className="text-white text-sm font-medium">{industry.title}</p>
+              <p className="text-white text-sm font-semibold font-dm tracking-tight">
+                {industry.title}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Marquee>
+
+      {/* Row 2 - offset and reverse direction */}
+      <Marquee gradient={false} speed={100} direction="right">
+        <div className="flex items-center gap-10 mt-14">
+          {industries.map((industry, i) => (
+            <div
+              key={i}
+              className="flex flex-col items-center gap-2 min-w-[150px] text-white"
+            >
+              <img
+                src={industry.img}
+                alt={industry.title}
+                className="w-32 h-20 object-cover rounded-full shadow-md"
+              />
+              <p className="text-white text-sm font-semibold font-dm tracking-tight">
+                {industry.title}
+              </p>
             </div>
           ))}
         </div>

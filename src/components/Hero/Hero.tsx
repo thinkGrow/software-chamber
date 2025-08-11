@@ -1,7 +1,6 @@
-// import React from "react";
-
 import Cards from "./Cards";
 import Nav from "./Nav";
+import Span from "../span/Span.tsx";
 
 const Hero = () => {
   return (
@@ -53,9 +52,7 @@ const Hero = () => {
               </defs>
               <rect width="100%" height="100%" fill="url(#dots)" />
             </svg>
-            <div className="inline-block bg-teal-800/20 text-teal-400 text-sm px-4 py-1 rounded-full">
-              ★ Smarter Idea, Instant Solutions
-            </div>
+            <Span></Span>
             <h1 className="text-center text-4xl md:text-8xl font-bold leading-tight space-y-2 font-bri">
               <span className="block text-[#00FFE0]  bg-clip-text">
                 We are your Software
