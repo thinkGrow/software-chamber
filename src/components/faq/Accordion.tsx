@@ -22,43 +22,71 @@ const Accordion = () => {
     },
   ];
 
+  const toggle = (i) => setOpenIndex((p) => (p === i ? -1 : i));
+
   return (
-    <div className="join join-vertical bg-base-100 w-full text-left">
+    <div className="w-full text-left">
       {items.map((item, i) => {
         const isOpen = openIndex === i;
 
         return (
-          <div
-            key={i}
-            className="collapse join-item border-base-300 border-b py-5"
-          >
-            <input
-              type="radio"
-              name="my-accordion"
-              checked={isOpen}
-              onChange={() => setOpenIndex(i)}
-            />
-            <div className="collapse-title font-medium flex justify-between items-center cursor-pointer font-bri tracking-tighter leading-2 text-3xl pb-10">
-              {item.q}
+          <div key={i} className="border-b border-base-300 py-4 md:py-6">
+            {/* HEADER */}
+            <button
+              type="button"
+              onClick={() => toggle(i)}
+              aria-expanded={isOpen}
+              aria-controls={`acc-panel-${i}`}
+              className="
+                w-full flex items-start justify-between gap-3
+                text-left
+              "
+            >
+              {/* Title: allow wrap + shrink on small screens */}
+              <div
+                className="
+                  min-w-0 flex-1 break-words whitespace-normal
+                  font-bri tracking-tight
+                  text-[clamp(18px,4.8vw,24px)]
+                  leading-[1.2]
+                "
+              >
+                {item.q}
+              </div>
 
-              {/* Different button for open/closed */}
-              {isOpen ? (
-                // open
-                <button className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 transition font-outfit">
-                  <div className="bg-[#2CCEBA] rounded-full w-10 h-10 flex items-center justify-center cursor-pointer hover:scale-105 transition ml-2">
-                    <img className="h-5 w-5" src="up.png" alt="" />
-                  </div>
-                </button>
-              ) : (
-                // closed
-                <button className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 transition font-outfit">
-                  <div className="bg-black rounded-full w-10 h-10 flex items-center justify-center cursor-pointer hover:scale-105 transition ml-2">
-                    <img className="h-5 w-5" src="down.png" alt="" />
-                  </div>
-                </button>
-              )}
+              {/* Custom arrow button (never wraps) */}
+              <span className="shrink-0 flex items-center gap-2 bg-white text-black px-3 md:px-4 py-2 rounded-full hover:bg-gray-100 transition font-outfit">
+                <span
+                  className={`${
+                    isOpen ? "bg-[#2CCEBA]" : "bg-black"
+                  } rounded-full w-9 h-9 md:w-10 md:h-10 grid place-items-center transition`}
+                >
+                  <img
+                    src={isOpen ? "up.png" : "down.png"}
+                    alt={isOpen ? "Collapse" : "Expand"}
+                    className="w-4 h-4 md:w-5 md:h-5"
+                  />
+                </span>
+              </span>
+            </button>
+
+            {/* BODY (animated auto-height, no overlap) */}
+            <div
+              id={`acc-panel-${i}`}
+              className={`grid transition-all duration-300 ease-out ${
+                isOpen
+                  ? "grid-rows-[1fr] opacity-100 mt-3"
+                  : "grid-rows-[0fr] opacity-0"
+              }`}
+            >
+              <div className="overflow-hidden">
+                <div className="font-outfit text-black/70
+                                text-[clamp(14px,4vw,18px)]
+                                leading-relaxed">
+                  {item.a}
+                </div>
+              </div>
             </div>
-            <div className="collapse-content text-xl leading-2.5 tracking-tighter font-outfit">{item.a}</div>
           </div>
         );
       })}

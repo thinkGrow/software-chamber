@@ -3,16 +3,10 @@ import Pills from "./Pills";
 const Stack = () => {
   return (
     <section className="relative bg-[#0E0E0E] py-20 overflow-x-clip isolate">
-      {/* background glow */}
+      {/* Background glow */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div
-          className="absolute left-0 top-1/4 w-[44vw] h-[44vw] -translate-x-1/3 -translate-y-1/3 
-                    rounded-full bg-[#00FFE0]/10 blur-[120px]"
-        />
-        <div
-          className="absolute right-10 top-10 w-[28vw] h-[28vw] 
-                    rounded-full bg-[#00FFE0]/10 blur-[120px]"
-        />
+        <div className="absolute left-0 top-1/4 w-[44vw] h-[44vw] -translate-x-1/3 -translate-y-1/3 rounded-full bg-[#00FFE0]/10 blur-[120px]" />
+        <div className="absolute right-10 top-10 w-[28vw] h-[28vw] rounded-full bg-[#00FFE0]/10 blur-[120px]" />
       </div>
 
       <div className="relative w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-[1.15fr_1fr] items-center gap-12">
@@ -33,38 +27,22 @@ const Stack = () => {
         </div>
 
         {/* Right pills */}
-        <div className="flex flex-col gap-5 md:gap-6">
+        <div className="flex flex-col gap-4 md:gap-6">
           {/* Row 1 */}
-          <div className="flex gap-6 translate-x-30">
-            <Pills
-              label="Spotify"
-              icon="spotify.png"
-              className="min-w-[220px]"
-            />
-            <Pills
-              label="TalentQI"
-              icon="talentqi.png"
-              className="min-w-[220px]"
-            />
+          <div className="flex gap-4 md:gap-6 translate-x-4 md:translate-x-30">
+            <Pills label="Spotify" icon="spotify.png" className="min-w-[160px] md:min-w-[220px]" />
+            <Pills label="TalentQI" icon="talentqi.png" className="min-w-[160px] md:min-w-[220px]" />
           </div>
 
           {/* Row 2 */}
-          <div className="flex gap-6 md:translate-x-8">
-            <Pills
-              label="DropBox"
-              icon="dropbox.png"
-              className="min-w-[240px]"
-            />
-            <Pills
-              label="FliqPay"
-              icon="fliqpay.png"
-              className="min-w-[220px]"
-            />
+          <div className="flex gap-4 md:gap-6 md:translate-x-8">
+            <Pills label="DropBox" icon="dropbox.png" className="min-w-[180px] md:min-w-[240px]" />
+            <Pills label="FliqPay" icon="fliqpay.png" className="min-w-[160px] md:min-w-[220px]" />
           </div>
 
           {/* Row 3 */}
-          <div className="flex justify-start translate-x-38">
-            <Pills label="Slack" icon="slack.png" className="min-w-[240px]" />
+          <div className="flex justify-start translate-x-6 md:translate-x-38">
+            <Pills label="Slack" icon="slack.png" className="min-w-[180px] md:min-w-[240px]" />
           </div>
         </div>
       </div>
