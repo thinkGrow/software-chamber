@@ -1,8 +1,15 @@
-const Pills = ({ label, icon, className = "" }) => {
+import React from "react";
+
+type PillsProps = {
+  label: string;
+  icon: string; // Filename from /public/stack/
+  className?: string;
+};
+
+const Pills: React.FC<PillsProps> = ({ label, icon, className = "" }) => {
   return (
     <div
       className={[
-        // Smaller for mobile, larger for md+
         "relative flex items-center gap-2 px-4 md:px-7 h-10 md:h-[74px]",
         "rounded-full bg-gradient-to-b from-[#2CCEBA] to-[#2CCEBA]/5",
         className,

@@ -30,19 +30,39 @@ const Stack = () => {
         <div className="flex flex-col gap-4 md:gap-6">
           {/* Row 1 */}
           <div className="flex gap-4 md:gap-6 translate-x-4 md:translate-x-30">
-            <Pills label="Spotify" icon="spotify.png" className="min-w-[160px] md:min-w-[220px]" />
-            <Pills label="TalentQI" icon="talentqi.png" className="min-w-[160px] md:min-w-[220px]" />
+            <Pills
+              label="Spotify"
+              icon="spotify.png"
+              className="min-w-[160px] md:min-w-[220px]"
+            />
+            <Pills
+              label="TalentQI"
+              icon="talentqi.png"
+              className="min-w-[160px] md:min-w-[220px]"
+            />
           </div>
 
           {/* Row 2 */}
           <div className="flex gap-4 md:gap-6 md:translate-x-8">
-            <Pills label="DropBox" icon="dropbox.png" className="min-w-[180px] md:min-w-[240px]" />
-            <Pills label="FliqPay" icon="fliqpay.png" className="min-w-[160px] md:min-w-[220px]" />
+            <Pills
+              label="DropBox"
+              icon="dropbox.png"
+              className="min-w-[180px] md:min-w-[240px]"
+            />
+            <Pills
+              label="FliqPay"
+              icon="fliqpay.png"
+              className="min-w-[160px] md:min-w-[220px]"
+            />
           </div>
 
           {/* Row 3 */}
           <div className="flex justify-start translate-x-6 md:translate-x-38">
-            <Pills label="Slack" icon="slack.png" className="min-w-[180px] md:min-w-[240px]" />
+            <Pills
+              label="Slack"
+              icon="slack.png"
+              className="min-w-[180px] md:min-w-[240px]"
+            />
           </div>
         </div>
       </div>

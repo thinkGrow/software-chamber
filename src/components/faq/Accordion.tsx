@@ -1,9 +1,14 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-const Accordion = () => {
-  const [openIndex, setOpenIndex] = useState(0);
+type AccordionItem = {
+  q: string;
+  a: string;
+};
 
-  const items = [
+const Accordion: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState<number>(0);
+
+  const items: AccordionItem[] = [
     {
       q: "What software development services does your company offer?",
       a: 'Click the "Sign Up" button in the top right corner and follow the registration process.',
@@ -22,7 +27,9 @@ const Accordion = () => {
     },
   ];
 
-  const toggle = (i) => setOpenIndex((p) => (p === i ? -1 : i));
+  const toggle = (i: number) => {
+    setOpenIndex((prev) => (prev === i ? -1 : i));
+  };
 
   return (
     <div className="w-full text-left">
@@ -37,12 +44,9 @@ const Accordion = () => {
               onClick={() => toggle(i)}
               aria-expanded={isOpen}
               aria-controls={`acc-panel-${i}`}
-              className="
-                w-full flex items-start justify-between gap-3
-                text-left
-              "
+              className="w-full flex items-start justify-between gap-3 text-left"
             >
-              {/* Title: allow wrap + shrink on small screens */}
+              {/* Title */}
               <div
                 className="
                   min-w-0 flex-1 break-words whitespace-normal
@@ -54,7 +58,7 @@ const Accordion = () => {
                 {item.q}
               </div>
 
-              {/* Custom arrow button (never wraps) */}
+              {/* Custom arrow button */}
               <span className="shrink-0 flex items-center gap-2 bg-white text-black px-3 md:px-4 py-2 rounded-full hover:bg-gray-100 transition font-outfit">
                 <span
                   className={`${
@@ -70,7 +74,7 @@ const Accordion = () => {
               </span>
             </button>
 
-            {/* BODY (animated auto-height, no overlap) */}
+            {/* BODY */}
             <div
               id={`acc-panel-${i}`}
               className={`grid transition-all duration-300 ease-out ${
@@ -80,9 +84,7 @@ const Accordion = () => {
               }`}
             >
               <div className="overflow-hidden">
-                <div className="font-outfit text-black/70
-                                text-[clamp(14px,4vw,18px)]
-                                leading-relaxed">
+                <div className="font-outfit text-black/70 text-[clamp(14px,4vw,18px)] leading-relaxed">
                   {item.a}
                 </div>
               </div>
