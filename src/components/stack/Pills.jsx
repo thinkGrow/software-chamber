@@ -2,22 +2,23 @@ const Pills = ({ label, icon, className = "" }) => {
   return (
     <div
       className={[
-        "relative flex items-center gap-3 px-6 md:px-7 h-16 md:h-[74px]",
+        // smaller defaults for mobile, larger for md+
+        "relative flex items-center gap-2 px-4 md:px-7 h-10 md:h-[74px]",
         "rounded-full bg-gradient-to-b from-[#2CCEBA] to-[#2CCEBA]/5",
         className,
       ].join(" ")}
     >
       {/* Icon */}
-      <div className="grid place-items-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-[0_4px_16px_rgba(0,0,0,0.25)]">
+      <div className="grid place-items-center w-8 h-8 md:w-12 md:h-12 rounded-full bg-white shadow-[0_4px_16px_rgba(0,0,0,0.25)]">
         <img
           src={`/stack/${icon}`}
           alt={label}
-          className="w-5 h-5 md:w-6 md:h-6"
+          className="w-4 h-4 md:w-6 md:h-6"
         />
       </div>
 
       {/* Label */}
-      <span className="text-white/95 font-medium tracking-tight md:text-base font-outfit">
+      <span className="text-white/95 font-medium tracking-tight text-sm md:text-base font-outfit">
         {label}
       </span>
 

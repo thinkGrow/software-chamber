@@ -53,7 +53,7 @@ const Hero = () => {
               <rect width="100%" height="100%" fill="url(#dots)" />
             </svg>
             <Span></Span>
-            <h1 className="text-center text-4xl md:text-8xl font-bold leading-tight space-y-2 font-bri">
+            <h1 className="text-center text-4xl md:text-8xl font-bold leading-tight space-y-2 font-bri tracking-tight">
               <span className="block text-[#00FFE0]  bg-clip-text">
                 We are your Software
               </span>
@@ -83,7 +83,7 @@ const Hero = () => {
                   className="bg-gradient-to-bl text-2xl from-white/50 to-white/10 rounded-full px-4 py-2 flex items-center justify-center gap-4 backdrop-blur-3xl font-medium text-white 
  "
                 >
-                  <p className="outline-title">Contact Us</p>
+                  <p className="outline-title cursor-pointer">Contact Us</p>
                   <div className="bg-white rounded-full p-2">
                     <img className="w-4 h-4" src="hero/arrow.png" alt="arrow" />
                   </div>

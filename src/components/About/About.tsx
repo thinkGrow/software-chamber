@@ -3,17 +3,25 @@ const About = () => {
     <div className="w-11/12 mx-auto mt-10">
       {/* About Title */}
       <div>
-        <h1 className="text-7xl font-bri text-center text-balance">
-          <span className="inline-block">
-            <img src="stars.png" alt="stars" />
-          </span>
-          At Software Chamber,
-          <span className="text-neutral-400"> we specialize</span>
-          in turning complex challenges into elegant
-          <span className="text-neutral-400"> digital solutions</span>
-          <span className="inline-block">
-            <img src="about/stock.png" alt="stock" />
-          </span>
+        <h1 className="flex flex-wrap items-baseline justify-center gap-2 text-center leading-tight text-4xl md:text-7xl font-bri">
+          {/* star as a glyph (no extra whitespace) */}
+          <img
+            src="stars.png"
+            alt="stars"
+            className="h-[1em] w-auto align-middle"
+          />
+
+          <span>At Software Chamber,</span>
+          <span className="text-neutral-400">we specialize</span>
+          <span>in turning complex challenges into elegant</span>
+          <span className="text-neutral-400">digital solutions</span>
+
+          {/* trailing icon as a glyph */}
+          <img
+            src="about/stock.png"
+            alt="stock"
+            className="h-[1em] w-auto align-middle"
+          />
         </h1>
       </div>
 

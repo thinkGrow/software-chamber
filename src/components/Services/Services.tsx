@@ -21,17 +21,17 @@ const Services = () => {
       {/* Section Header */}
       <div className="flex justify-between items-center mb-12">
         {/* Left Column */}
-        <h2 className="text-7xl text-black flex items-center gap-2 font-bri font-medium">
+        <h2 className="text-4xl md:text-7xl text-black flex items-center gap-2 font-bri font-medium">
           Services
           <img
             src="stars.png"
             alt="spark"
-            className="w-10 h-10 relative right-5 top-0.5"
+            className="w-8 h-8 md:w-10 md:h-10 relative right-5 top-0.5"
           />
         </h2>
         {/* Right Column */}
         <button className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 transition font-outfit">
-          <span className="text-2xl font-medium tracking-tighter">
+          <span className="text-xl md:text-2xl font-medium tracking-tighter">
             All Services
           </span>
 
@@ -50,13 +50,13 @@ const Services = () => {
           >
             <div>
               <div>
-                <h3 className="text-4xl font-bri font-semibold mb-2 h-[12vh]">
+                <h3 className="text-2xl md:text-4xl font-bri font-semibold mb-2 h-[12vh]">
                   {item.title}
                 </h3>
               </div>
-              <p className="text-2xl font-outfit text-gray-500">{item.desc}</p>
+              <p className="pt-2 text-xl md:pt-0 md:text-2xl font-outfit text-gray-500">{item.desc}</p>
             </div>
-            <div className="mt-8">
+            <div className="md:mt-8">
               <button className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center hover:scale-105 transition cursor-pointer hover:text-[#25BEB4] text-black">
                 <svg
                   className={`w-4 h-4"
