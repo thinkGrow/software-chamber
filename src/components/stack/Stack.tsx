@@ -2,7 +2,7 @@ import Pills from "./Pills";
 
 const Stack = () => {
   return (
-    <section className="relative bg-[#0E0E0E] py-20 overflow-x-clip isolate">
+    <section className="relative bg-[#0E0E0E] py-22 overflow-x-clip isolate">
       {/* Background glow */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute left-0 top-1/4 w-[44vw] h-[44vw] -translate-x-1/3 -translate-y-1/3 rounded-full bg-[#00FFE0]/10 blur-[120px]" />
